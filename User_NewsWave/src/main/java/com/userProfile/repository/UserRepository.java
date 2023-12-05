@@ -7,5 +7,6 @@ import com.userProfile.entity.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User,Integer> {
+    User getUserByEmailId(String email) ;
 
 }
